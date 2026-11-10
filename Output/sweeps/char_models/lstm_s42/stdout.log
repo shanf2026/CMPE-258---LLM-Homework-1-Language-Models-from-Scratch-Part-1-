@@ -1,0 +1,64 @@
+[run] /Users/spartan/Documents/DeepDataMiningLearning/DeepDataMiningLearning/llm/outputs/nanolm/sweeps/char_models/lstm_s42
+[run] device: mps (precision=fp32, compile=no) | world_size=1
+[data] tinyshakespeare_char_tail100 | tokenizer=char vocab=65 | train 1,003,854 tok | val 111,540 tok
+[model] lstm: 1,069,824 params (1,053,184 non-embedding)
+[train] 2000 steps x 8,192 tokens/step (16.32 passes over train) | optimizer=adamw schedule=cosine
+step     50 | loss 3.4078 | lr 1.00e-03 | 96.4k tok/s | 4s
+step    100 | loss 2.4984 | lr 2.00e-03 | 98.9k tok/s | 8s
+step    150 | loss 2.1494 | lr 1.98e-03 | 98.5k tok/s | 13s
+step    200 | loss 1.9382 | lr 1.96e-03 | 99.6k tok/s | 17s
+step    250 | loss 1.7890 | lr 1.93e-03 | 99.0k tok/s | 21s
+  eval step    250 | val_loss 1.8471 | val_bpb 2.6647 | acc 45.0% | 21s
+step    300 | loss 1.6897 | lr 1.90e-03 | 98.6k tok/s | 25s
+step    350 | loss 1.6237 | lr 1.87e-03 | 99.1k tok/s | 29s
+step    400 | loss 1.5785 | lr 1.83e-03 | 99.6k tok/s | 33s
+step    450 | loss 1.5382 | lr 1.79e-03 | 99.6k tok/s | 37s
+step    500 | loss 1.5233 | lr 1.74e-03 | 99.6k tok/s | 41s
+  eval step    500 | val_loss 1.6851 | val_bpb 2.4312 | acc 50.3% | 41s
+step    550 | loss 1.5000 | lr 1.69e-03 | 99.7k tok/s | 46s
+step    600 | loss 1.4777 | lr 1.63e-03 | 99.5k tok/s | 50s
+step    650 | loss 1.4655 | lr 1.57e-03 | 99.7k tok/s | 54s
+step    700 | loss 1.4496 | lr 1.51e-03 | 100.0k tok/s | 58s
+step    750 | loss 1.4396 | lr 1.45e-03 | 100.0k tok/s | 62s
+  eval step    750 | val_loss 1.6335 | val_bpb 2.3567 | acc 51.9% | 62s
+step    800 | loss 1.4250 | lr 1.38e-03 | 99.9k tok/s | 66s
+step    850 | loss 1.4129 | lr 1.31e-03 | 100.0k tok/s | 70s
+step    900 | loss 1.4082 | lr 1.24e-03 | 100.9k tok/s | 74s
+step    950 | loss 1.4026 | lr 1.17e-03 | 99.8k tok/s | 78s
+step   1000 | loss 1.3981 | lr 1.10e-03 | 99.6k tok/s | 82s
+  eval step   1000 | val_loss 1.6005 | val_bpb 2.3091 | acc 52.8% | 82s
+step   1050 | loss 1.3764 | lr 1.03e-03 | 99.8k tok/s | 87s
+step   1100 | loss 1.3830 | lr 9.61e-04 | 99.7k tok/s | 91s
+step   1150 | loss 1.3739 | lr 8.91e-04 | 99.7k tok/s | 95s
+step   1200 | loss 1.3729 | lr 8.23e-04 | 99.8k tok/s | 99s
+step   1250 | loss 1.3614 | lr 7.57e-04 | 99.6k tok/s | 103s
+  eval step   1250 | val_loss 1.5787 | val_bpb 2.2776 | acc 53.5% | 103s
+step   1300 | loss 1.3620 | lr 6.93e-04 | 99.5k tok/s | 107s
+step   1350 | loss 1.3615 | lr 6.31e-04 | 98.8k tok/s | 111s
+step   1400 | loss 1.3514 | lr 5.72e-04 | 99.3k tok/s | 115s
+step   1450 | loss 1.3489 | lr 5.17e-04 | 99.2k tok/s | 119s
+step   1500 | loss 1.3500 | lr 4.65e-04 | 98.8k tok/s | 124s
+  eval step   1500 | val_loss 1.5685 | val_bpb 2.2629 | acc 53.8% | 124s
+step   1550 | loss 1.3443 | lr 4.17e-04 | 99.5k tok/s | 128s
+step   1600 | loss 1.3440 | lr 3.73e-04 | 99.3k tok/s | 132s
+step   1650 | loss 1.3395 | lr 3.33e-04 | 99.1k tok/s | 136s
+step   1700 | loss 1.3305 | lr 2.99e-04 | 99.2k tok/s | 140s
+step   1750 | loss 1.3342 | lr 2.69e-04 | 99.4k tok/s | 144s
+  eval step   1750 | val_loss 1.5606 | val_bpb 2.2515 | acc 53.9% | 144s
+step   1800 | loss 1.3330 | lr 2.44e-04 | 98.8k tok/s | 148s
+step   1850 | loss 1.3266 | lr 2.25e-04 | 98.9k tok/s | 153s
+step   1900 | loss 1.3296 | lr 2.11e-04 | 98.9k tok/s | 157s
+step   1950 | loss 1.3253 | lr 2.03e-04 | 99.3k tok/s | 161s
+step   2000 | loss 1.3329 | lr 2.00e-04 | 98.6k tok/s | 165s
+  eval step   2000 | val_loss 1.5553 | val_bpb 2.2438 | acc 54.3% | 165s
+[final] val_loss 1.5553 | val_bpb 2.2438 | ppl 4.74 | acc 54.28% | 111,360 tokens, 1.00 bytes/token
+[sample]
+
+Mistituereaf foalusted yet wite anourienters,
+In tercertares on entigioustrace.aid tone,cipestines,
+and patein' and sie in merterie, and,receldinis,
+and cualerens anderie toneir tolture than ofeicinisasies,er in enteraie,one;
+Me helmerie, in ansir mercili in anourin
+sersing on our anricile andici intertition,ence sersice youn patier. focl wite fissertionsord,-and hear in torture,and,condidie, wite
+
+[done] metrics -> /Users/spartan/Documents/DeepDataMiningLearning/DeepDataMiningLearning/llm/outputs/nanolm/sweeps/char_models/lstm_s42/metrics.json
